@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <title>operator for in</title>
+</head>
+<body>
+   <script> 
+      "use strict";
+      document.write ("<h1> Робота з операторами циклу while у грі</h1>");
+
+      const secretPassword = "1234";
+      let sproba = 3; 
+      alert("Ласкаво просимо до гри 'Вгадай пароль'! У вас є 3 спроби (пароль складається з чотирьох цифр).");
+      alert("Дам маленьку підказку, перша 1");
+      let sproba_poh = false;
+      
+      while (sproba > 0 && !sproba_poh) {
+          let user = prompt("Введіть пароль (спроб залишилось: " + sproba + "):");
+          if (user === secretPassword) {
+              alert("Вітаємо! Ви вгадали пароль!");
+              sproba_poh = true;
+          } else {
+            sproba--;
+              if (sproba > 0) {
+                  alert("Неправильний пароль. Спробуйте ще раз.");
+              } else {
+                  alert("У вас закінчилися спроби. Гра закінчена.");
+              }
+          }
+      }
+
+
+   </script>
+   <h1>Next steps</h1>
+   <a href="index.html" class="butn">Повернутися</a>
+</body>
+</html>

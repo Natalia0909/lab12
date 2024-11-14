@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <title>operator for in</title>
+</head>
+<body>
+   <script> 
+      "use strict";
+      document.write ("<h1> Робота з операторами циклу for in</h1>");
+      
+      let student = {
+         name: "Іван",
+         age: 20,
+         course: "Програмування"
+      };
+     
+      document.write("<h2>Інформація про студента:</h2>");
+      for (let key in student) {
+         document.write(key + ": " + student[key] + "<br>");
+      }
+     
+   </script>
+   <h1>Next steps</h1>
+   <a href="index.html" class="butn">Повернутися</a>
+</body>
+</html>

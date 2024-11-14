@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <title>operator switch</title>
+</head>
+<body>
+   <script> 
+      "use strict";
+      document.write ("<h1> Робота з оператором Switch</h1>");
+
+      let grup = prompt ("На якому ви курсі (1-4)? Якщо закінчили навчання введіть - 'f'.")
+      switch (grup) {
+         case '1':
+            document.write("<p>Бібітура</p>");
+         break;
+         case '2':
+            document.write("<p>Удачі на сесії </p>");
+         break;
+         case '3':
+            document.write("<p> Вже ближче до завершення </p>");
+         break;
+         case '4':
+            document.write("<p> Дипломну вже почав робити? </p>");
+         break;
+         case 'f':
+            document.write("<p> Вітаю, з закінченням голодних ігор </p>");
+         break;
+         default:
+         document.write("<p>Введіть коректне значення</p>");
+      }
+
+   </script>
+   <h1>Next steps</h1>
+   <a href="index.html" class="butn">Повернутися</a>
+</body>
+</html>

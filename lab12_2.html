@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <title>operator if</title>
+</head>
+<body>
+   <script>
+      "use strict";
+      document.write (
+         "<h1> Робота з оператором IF та умовними операторами </h1>");
+         
+      let num1 = parseFloat(prompt("Введіть перше число:"));
+      let num2 = parseFloat(prompt("Введіть друге число:"));
+      let num3 = parseFloat(prompt("Введіть третє число:"));
+
+      let min;
+
+      if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+         document.write("<p> Не коректне значення </p>");
+     } else if (num1 <= num2 && num1 <= num3) {
+         min = num1;
+     } else if (num2 <= num1 && num2 <= num3) {
+         min = num2;
+     } else {
+         min = num3;
+     }
+     
+     document.write("<p> Найменше число: " + min + "</p>");
+   
+   </script>
+
+   <h1>Next steps</h1>
+   <a href="index.html" class="butn">Повернутися</a>
+</body>
+</html>

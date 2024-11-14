@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <title>operator if</title>
+</head>
+<body>
+   <script>
+      "use strict";
+      document.write (
+         "<h1> Робота з оператором IF</h1>");
+         
+         let mod = prompt ("Виберіть який у вас сьогодні настрій (w - прекрасний, g - не поганий, b - поганий)");
+         if (mod == "w"){
+            document.write ("<p> Це чудово що у тебе прекрасний настрій! </p>");}
+         else if (mod == "g"){
+            document.write ("<p> Це добре що у тебе не поганий настрій </p>");}
+         else if (mod == "b"){
+         const mood = prompt ("Чому? Що трапилось?");
+         document.write ("<p> Не хвилюйся все буде добре! :) </p>");}
+         else {
+            document.write ("<p> До нових зустрічей :) </p>");
+         }
+   </script>
+   <h1>Next steps</h1>
+   <a href="index.html" class="butn">Повернутися</a>
+</body>
+</html>

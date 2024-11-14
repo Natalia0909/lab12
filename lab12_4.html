@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <title>operator while</title>
+</head>
+<body>
+   <script> 
+      "use strict";
+      document.write ("<h1> Робота з операторами циклу for</h1>");
+
+      let n = parseFloat(prompt("Введіть число n, яке хочете піднести до степеня:"));
+      let p = parseInt(prompt("Введіть ступінь p:"));
+
+      let pre = 1;
+
+      for (let i = 1; i <= p; i++) {
+         pre *= n;
+      }
+
+      document.write("<p>" + n + " піднесене до степеня " + p + " дорівнює " + pre + ".</p>");
+      document.write ("<h2> Робота з операторами циклу while </h2>");
+
+            let word = "Львівська Політехніка";
+            let result = "";
+            let i = 0;  
+
+            while (i < word.length) {
+               result += word[i] + " ";
+                document.write(result + "<br>");
+                i++;
+            }
+
+      document.write ("<h2> Робота з операторами циклу do while </h2>");
+      i = 21; 
+      do { 
+          document.write("ПП-" + i + "<br>");
+          i++; 
+      } while (i < 28);
+
+
+
+   </script>
+   <h1>Next steps</h1>
+   <a href="index.html" class="butn">Повернутися</a>
+</body>
+</html>
